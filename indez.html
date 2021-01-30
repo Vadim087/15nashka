@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta http-equiv = "Content-Type" content = "text/html; charset=url-8">
+  <title>Пятнашки</title>
+  <style type = "text/css">
+   td {
+    text-indent: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 27px;
+    color: black;
+   }
+   .dv {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: white;
+    float: left;
+    margin-left: 6px;
+    margin-right: 6px;
+   }
+   p {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-size: 12pt;
+   }
+   .btn {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Times New Roman", serif;
+    width: 80px;
+    height: 25px;
+    margin-right: 4px;
+   }
+  </style>
+  <script type = "text/javascript" src = "fftngs.js"></script>
+ </head>
+ <body>
+  <div class = "dv">
+   <p><b>Пятнашки</b></p>
+   <p>Расположите числа в порядке возрастания,</p>
+   <p>поместив первые 4 в первой строке таблицы,</p>
+   <p>следующие 4 - во второй строке таблицы и так далее</p>
+   <p>Для перемещение числа используйте мышиный удар.</p>
+   <br>
+   <p>
+    <input type = "button" class = "btn" value = "Новая" onclick = "nGmFftngs()" title = "Начни сначала"> 
+    <input type = "button" class = "btn" value = "Завершить" onclick = "bldFftngs()" title = "Получить решение"> 
+   </p>
+  </div>
+  <script type = "text/javascript">
+   mkTbl("50px", 4);
+   tbl = document.getElementById("tbl");
+   nGmFftngs();
+  </script>
+ </body>
+</html>
